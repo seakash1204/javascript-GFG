@@ -22,3 +22,6 @@ const arr = [17,25,40,54,29,65,78,10,8];
 
 const result = arr.reduce((acc, curr) => curr < 40 ? acc += curr : acc, 0) 
 console.log(result)
+
+const output = arr.filter(num => num < 40).reduce((acc, curr) => acc += curr, 0)
+console.log(output)
